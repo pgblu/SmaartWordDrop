@@ -1,6 +1,6 @@
-require_relative 'generate_wordlist'
+require_relative 'generate_array'
 
-file = "/Users/pgblu/Documents/Ruby_Code/WordDropStuff/main_dictionary.txt"
+file = "/Users/pgblu/Documents/Ruby_Code/SmaartWordDrop/main_dictionary.txt"
 words = IO.readlines(file)
 generator = LengthGenerator.new
 
