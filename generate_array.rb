@@ -16,7 +16,11 @@ def generate_weighted_list(num, avg)
   size = list.length
   diff = list.inject(:+) - num
   diff.times do
-    list[rand(size)] -= 1
+    chosen_word = 0
+    while chosen_word <= 2
+      chosen_word = list[rand(size)]
+    end
+    chosen_word -= 1
   end
   list
 end
